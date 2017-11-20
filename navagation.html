@@ -1,18 +1,51 @@
 
-  <div class="container">
-    <img src="images\panorama_sunset.jpg" width=100% height="30%"></img>
-    <div class="centered"><h1>Another Coder's Journey to Greatness</h1>
-        <em><h2>Building life... one line of code at a time.</h2></em>
-      </div>
+<div class="row">
+  <div class="twelve columns">
+          <div class="container">
+          <div class="fixedheader">
+          <img class="headerimg" src="/images/panorama_sunset.jpg" width="100%" height="125px" ></img>
+          <div class="centered" style="color:white" "width:10%">
+            <h2>A Coder's Journey</h2>
+              <em><h4>Building life... one line of code at a time</h4></em>
+            </div>
+        </div>
+        <div class="quoteBubble">
+          <em><p>The best revenge is massive success.</p></em>
+            <b><h5>-Frank Sinatra</h5></b>
+        </div>
+          <div class="topnav" id="myTopnav">
+            <i class="fa fa-home"></i><a href="/">Home</a> |
+            <a href="HTML_CSS.html">HTML/CSS</a> |
+            <a href="JavaScript.html">JavaScript</a> |
+            <a href="RubyOnRails.html">Ruby on Rails</a> |
+            <a href="GenProg.html">Programming Resources</a>
+            <a href="Javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          <!--  <script>
+              function myFunction() {
+                  var x = document.getElementbyId("myTopnav");
+                  if (x.className === "topnav") {
+                      x.className += " responsive";
+                  } else {
+                      x.className = "topnav";
+                  }
+              }
+            </script>-->
+          </div>
+          <script>
+              var home = "/index.html";
+              var currenturl = window.location.pathname;
+              var spliturl = window.location.pathname.split( '/' );
+              if (currenturl === '/' ) {
+                $('#myTopnav>a[href="/"]').css({background: 'black'})
+                $('#myTopnav>a[href="/"]').css({color: 'orange'})
+              }
+              else {
+              $('#myTopnav>a[href="'+spliturl[1]+'"]').css({background: 'black'})
+              $('#myTopnav>a[href="'+spliturl[1]+'"]').css({color: 'orange'})
+            }
+
+          </script>
+    </div>
   </div>
-  <nav>
-    <div class="topnav" id="myTopnav">
-      <a href="index.html">Home</a>
-      <a href="HTML_CSS.html">HTML/CSS</a>
-      <a href="JavaScript.html">JavaScript</a>
-      <a href="RubyOnRails.html">Ruby on Rails</a>
-      <a href="GenProg.html">Programming Resources</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
-  </nav>
+</div>
 </br>
